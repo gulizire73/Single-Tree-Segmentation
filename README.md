@@ -9,7 +9,7 @@ step2：运行DBSCAN.py
 
 2.方法介绍
 2.1树木点提取
-![image](https://github.com/user-attachments/assets/a5629963-a558-4ae3-8869-bc97c957a358)
+                                                  ![image](https://github.com/user-attachments/assets/a5629963-a558-4ae3-8869-bc97c957a358)
 2.1.1数据预处理
 可选择对数据进行去噪，降采样，地面滤波等操作
 本项目没有提供预处理代码
@@ -29,8 +29,10 @@ step2：运行DBSCAN.py
 ![image](https://github.com/user-attachments/assets/d6cc4a92-4336-4e8c-b02c-52cace83e981)
 由图可知，部分建筑边缘被误分为树木点。根据误分类的点云结构分散，稀疏等特点，利用DBSCAN聚类方法对分类后的点云进行后处理。由于误分类点稀疏且分散，利用阈值，将簇内点数过小的点重新归为非树木点，对二分类结果进行修正。
 （5）DBSCAN聚类对分类结果后处理
-适当的调大邻域半径，防止树木点分割为过小的簇。如图（左）为对分为树木的点云数据聚类修正后的点云二分类结果。
-对比可以看出，聚类后处理后提取的树木点云较为完整，且建筑区域都正确的分类为非树木点。如图（右）为最终二分类结果。
-![image](https://github.com/user-attachments/assets/7a75c77b-afe0-4ea8-9b71-f0c11f3d7ad8)![image](https://github.com/user-attachments/assets/aefd0ac4-2ca3-47d4-aa04-679b76aace18)
+适当的调大邻域半径，防止树木点分割为过小的簇。如图（上）为对分为树木的点云数据聚类修正后的点云二分类结果。
+对比可以看出，聚类后处理后提取的树木点云较为完整，且建筑区域都正确的分类为非树木点。如图（下）为最终二分类结果。
+![image](https://github.com/user-attachments/assets/7a75c77b-afe0-4ea8-9b71-f0c11f3d7ad8)
+![image](https://github.com/user-attachments/assets/aefd0ac4-2ca3-47d4-aa04-679b76aace18)
+
 
 
