@@ -31,7 +31,7 @@ step2：运行DBSCAN.py
 （5）DBSCAN聚类对分类结果后处理   
 适当的调大邻域半径，防止树木点分割为过小的簇。如图（上）为对分为树木的点云数据聚类修正后的点云二分类结果。    
 对比可以看出，聚类后处理后提取的树木点云较为完整，且建筑区域都正确的分类为非树木点。如图（下）为最终二分类结果。    
-![image](https://github.com/user-attachments/assets/7a75c77b-afe0-4ea8-9b71-f0c11f3d7ad8)   
+![image](https://github.com/user-attachments/assets/7a75c77b-afe0-4ea8-9b71-f0c11f3d7ad8)
 ![image](https://github.com/user-attachments/assets/aefd0ac4-2ca3-47d4-aa04-679b76aace18)    
 
 
